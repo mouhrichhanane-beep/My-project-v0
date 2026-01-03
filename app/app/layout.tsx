@@ -1,9 +1,9 @@
+import type { Metadata } from 'next'
+import './globals.css'  // أزل هذا إذا لم يكن لديك ملف globals.css
 
-import './globals.css'  // إذا كان لديك ملف CSS عالمي
-
-export const metadata = {
-  title: 'My Project',
-  description: 'Description of my project',
+export const metadata: Metadata = {
+  title: 'My Project V0',
+  description: 'A Next.js project',
 }
 
 export default function RootLayout({
@@ -13,7 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+      </body>
     </html>
   )
 }

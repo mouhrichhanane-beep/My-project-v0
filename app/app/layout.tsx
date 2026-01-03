@@ -1,8 +1,9 @@
-import './globals.css'
+
+import './globals.css'  // إذا كان لديك ملف CSS عالمي
 
 export const metadata = {
   title: 'My Project',
-  description: 'Created with v0',
+  description: 'Description of my project',
 }
 
 export default function RootLayout({
@@ -11,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ar">
+    <html lang="en">
       <body>{children}</body>
     </html>
   )
